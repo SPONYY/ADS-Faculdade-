@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Radio e checkbox</title>
+</head>
+<body>
+    <form method="post">
+
+        <h1 style="text-align: center;">Montando uma Pizza</h1>
+        
+        <hr>
+
+        <h3>Selecione o Sabor da Pizza:</h3>
+        <input type="radio" name="saborPizza"> <label>4 Queijos</label> <br>
+        <input type="radio" name="saborPizza"> <label>Calabresa</label> <br>
+        <input type="radio" name="saborPizza"> <label>Frango e Catupiry</label> <br>
+        <input type="radio" name="saborPizza"> <label>Portuguesa</label> <br>
+
+        <h3>Borda recheada?</h3>
+        <input type="radio" name="bordaRecheada?"> <label>Sim</label> <br>
+        <input type="radio" name="bordaRecheada?"> <label>Não</label> <br>
+
+        <h3>Adicionais?</h3>
+        <input type="checkbox" name="adicionais[]" value="quejo"> <label>+ Queijo</label> <br>
+        <input type="checkbox" name="adicionais[]" value="calabresa"> <label>+ Calabresa</label> <br>
+        <input type="checkbox" name="adicionais[]" value="Frango"> <label>+ Frango</label> <br>
+        <input type="checkbox" name="adicionais[]" value="catupiry"> <label>+ Catupiry</label> <br>
+
+        <h3>Bebida(as):</h3>
+        <input type="checkbox" name="bebidas[]" value="CocaLata"> <label>Coca-Cola Lata</label> <br>
+        <input type="checkbox" name="bebidas[]" value="Vedete2L"> <label>Vedete(2L)</label> <br>
+        <input type="checkbox" name="bebidas[]" value="Guarana2L"> <label>Guarana(2L)</label> <br>
+        
+        <br>
+
+        <button type="submit" onclick="alert('Pedido Enviado')">Enviar Pedido</button>
+
+    </form>
+    
+</body>
+</html>

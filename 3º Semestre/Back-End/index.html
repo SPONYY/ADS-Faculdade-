@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario simples</title>
+</head>
+<body>
+    
+    <form name="signup" autocomplete="off" onsubmit="alert('Enviei o formulario')" method="post" target="_blank" action="#">
+
+        <label>Text:</label> <input type="text" name="name"> <br>
+        <label>Number:</label> <input type="number" step="1" min="0" name="age"> <br>
+        <label>Password:</label> <input type="password" name="password"> <br>
+        <label>Range:</label> <input type="range" name="range"> <br>
+        <label>Color:</label> <input type="color"> <br>
+        <label>E-mail:</label> <input type="email"> <br>
+        <label>URL:</label> <input type="url"> <br>
+        <label>Date:</label> <input type="date"> <br>
+        <label>Week:</label> <input type="week"> <br>
+        <label>Month:</label> <input type="month"> <br>
+        <label>Checkbox:</label> <input type="checkbox"> <br>
+        <label>Radio:</label> <input type="radio" name="aceita"> <input type="radio" name="aceita"> <br> 
+        <label>Hidden:</label> <input type="hidden"> <br>
+        <label>File:</label> <input type="file"> <br>
+        <label>Search:</label> <input type="search"> <br>
+        <label>SelectBox</label> 
+        <select>
+            <option value="Teste">Teste1</option>
+            <option value="Teste">Teste2</option>
+            <option value="Teste">Teste3</option>
+        </select> <br>
+        <label>TextArea</label> <textarea cols="30" rows="3"></textarea> <br>
+
+
+        <button type="submit">Enviar</button> 
+        <button type="reset">Limpar</button>
+        <br>
+
+        <a href="TestandoRadioECheck.html">Ir para "Testando Radio e Checkbox"</a>
+
+    </form>
+
+</body>
+</html>
