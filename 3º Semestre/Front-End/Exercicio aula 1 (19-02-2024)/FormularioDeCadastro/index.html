@@ -15,16 +15,33 @@
     </header>
 
     <main>
-        <form class="formularioDeCadastro">
+
+        <div class="containerFormulario">
+            <form class="formularioDeCadastro">
         
-            <label for="idColaborador">ID: </label><input style="height: 16px; width: 80px; border-radius: 4px;" type="number" name="" id=""> <br>
-            <label for="nomeColaborador">Nome Completo: </label> <input style="margin-top: 16px; width: fit-content; border-radius: 4px;" type="text"> <br>
-            <label for="aniversarioColaborador">Data de Nascimento: </label> <input style="margin-top: 16px; margin-bottom: 16px; border-radius: 4px;" type="date" name="" id=""> <br>
-            <label for="sexoColaborador">Gênero:</label> <br>
-            <label for="">Macho</label><input type="radio" name="sexoColaborador"> <label for="">Fêmea</label><input type="radio" name="sexoColaborador"> <label for="">Feiticeiro Jujutsu</label> <input type="radio" name="sexoColaborador">
+                <div class="divID">
+                    <label for="idColaborador">ID: </label><input style="width: 48px;" type="number" name="" id="">
+                </div>
+                <div>
+                    <label for="nomeColaborador">Nome Completo: </label> <br> <input type="text">
+                </div>
+                <div>
+                    <label for="aniversarioColaborador">Data de Nascimento: </label> <br> <input type="date" name="" id=""> <br>
+                </div>
+                <div>
+                    <label for="sexoColaborador">Gênero:</label> <br>
+                    <label for="">Macho</label><input type="radio" name="sexoColaborador"> <label for="">Fêmea</label><input type="radio" name="sexoColaborador"> <label for="">Feiticeiro Jujutsu</label> <input type="radio" name="sexoColaborador">
+                </div>
+                <div>
+                    <label for="">Estado Civil:</label>
+                    <select name="" id="">
+                        <option value="solteiro">Solteiro</option>
+                        <option value="Casado">Casado</option>
+                    </select>
+                </div>
 
-
-        </form>
+            </form>
+        </div>
     </main>
 
     <footer>

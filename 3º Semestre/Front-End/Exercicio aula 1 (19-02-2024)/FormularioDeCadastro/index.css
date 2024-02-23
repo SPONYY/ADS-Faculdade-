@@ -1,29 +1,60 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 header{
 
-    height: 10vh;
+    height: 8vh;
     width: 100%;
     background-color: rgb(92, 87, 87);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px black;
-    border-radius: 8px;
     
 }
 
 .formularioDeCadastro{
 
-    margin-top: 32px;
+    display: grid;
     padding: 16px;
-    width: 500px;
+    width: 600px;
     height: 500px;
     background-color: rgb(161, 244, 201);
-    border-radius: 24px;
-    -webkit-box-shadow: 0px 8px 19px 4px rgba(0,0,0,0.72); 
-    box-shadow: 0px 8px 19px 4px rgba(0,0,0,0.72);
-    color: white;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.72);
+    color: rgb(0, 0, 0);
+
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+label{
+
+    font: 18px bold;
+    margin: 8px;
+
+}
+input{
+
+    border-radius: 4px;
+    height: 24px;
+    margin: 8px;
+
+}
+
+.divCamposForm{
+
+    border: solid 1px black;
 
 }
