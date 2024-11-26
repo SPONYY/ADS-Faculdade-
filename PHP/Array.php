@@ -121,3 +121,84 @@ $a = 3;
  $e = $c - $d; // resultado é 3
 
 ?>
+
+<?php
+
+// (If Else) (Elsif Switch) 
+
+ $idade = 17;
+
+ if($idade < 18) {
+ echo 'Você não pode entrar aqui!';
+ } else {
+ echo 'Seja bem – vindo';
+ }
+
+
+$idade = 21;
+$identidade = true;
+if($idade > 18 && $identidade == true) {
+ echo 'Seja bem-vindo!';
+}
+
+
+$nome = 'Till Lindemann';
+if($nome == 'Richard Kruspe') {
+ echo 'E ae Richard Kruspe!';
+} elseif ($nome == 'Oliver Riedel') {
+ echo 'E ae Oliver Riedel!';
+} elseif ($nome == 'Till Lindemann') {
+ echo 'E ae Till Lindemann!';
+} else {
+ echo "E ae $nome!";
+}
+
+$nome = 'Fulano';
+
+ switch($nome) {
+ case 'Fulano':
+ echo 'E ai Fulano!';
+ break;
+
+ case 'Sicrano':
+ echo 'E ai Sicrano!';
+ break;
+
+ case 'Beltrano':
+ echo 'E ai Beltrano!';
+ break;
+
+ default:
+ echo 'Qual é o seu nome?';
+ break;
+ }
+
+ // Resultado é: E ai Fulano!
+
+
+?>
+
+
+<?php
+
+//While e Do while
+ 
+$num = 0;
+
+ while($num < 10 ) {
+ echo $num++;
+ }
+
+ // 0123456789
+
+
+$cont = 2000;
+
+ do{
+ $dobro = $cont + $cont;
+ echo "O dobro de $cont é $dobro";
+ $cont++;
+ } while ($cont <= 1999);
+
+
+?>
