@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+
+    text-align: center;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+}
+
+main{
+
+    margin-bottom: 100px;
+
+}
+
+#botoesHeader a{
+    margin-left: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    background-color: aquamarine;
+    border-radius: 1vh;
+    padding: 2vh 2vw;
+    margin-right: 2vw;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 120px; 
+    height: 40px;
+    font-size: 1vw; 
+    line-height: 3vh; 
+    font-weight: bold;
+
+
+}
+
+#botoesHeader a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #676464;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+.footer-bottom {
+    background-color: #393838;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.botaoFormulario{
+
+    margin-top: 16px;
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    background-color: aquamarine;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 120px; 
+    height: 40px;
+    font-size: 1vw; 
+    
+
+}
+
+.inputforms{
+
+    border-radius: 16px;
+
+}

@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda a altura da janela de visualização */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #000020;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.logo {
+    order: 1; /* Muda a ordem do elemento */
+}
+
+.login-register {
+    order: 3; /* Muda a ordem do elemento */
+    font-size: 20px;
+    text-align: center;
+}
+
+.middle-button {
+    order: 2; /* Muda a ordem do elemento */
+    font-size: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    background-color: #000020;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+li{
+    margin: 8px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input, select{
+    height: 32px;
+    width: 164px;
+    margin-top: 4px;
+}
+
+.cadastroForm{
+    padding: 16px;
+    margin: 16px;
+}
+
+button{
+    color: white;
+    background-color: #000020;
+    width: fit-content;
+    height: 32px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.botoes{
+    margin-bottom: 8px;
+}
+
+
+
+table{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#tabela-cadastros{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tabela-cadastros th, #tabela-cadastros td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tabela-cadastros tr:nth-child(even){background-color: #f2f2f2;}
+
+#tabela-cadastros tr:hover {background-color: #ddd;}
+
+#tabela-cadastros th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #000020;
+    color: white;
+}
+
+#tabela-cadastros td{
+    text-align: center;
+}
+
+
+
+.content-wrapper {
+    flex: 1; /* Ocupa todo o espaço vertical restante */
+}
+
+
+

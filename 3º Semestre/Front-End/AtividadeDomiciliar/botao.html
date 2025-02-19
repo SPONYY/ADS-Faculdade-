@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/botao.css">
+</head>
+<body>
+
+    <div class="btn-container">
+    
+        <button class="button" id="button1">Ligar</button>
+        <button class="button" id="button2">Desligar</button>
+        <button class="button" id="button3">Velocidade +</button>
+        <button class="button" id="button4">Velocidade -</button>
+
+    </div>
+    <script>
+
+        
+var buttons = document.querySelectorAll('.button');
+
+function activateButton() {
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active');
+    }
+    this.classList.add('active');
+}
+
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = activateButton;
+}
+
+
+    </script>
+
+
+<style>
+
+body {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #000020;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin: 5px;
+    cursor: pointer;
+    min-width: 100px;
+    
+}
+
+.active {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.btn-container{
+    margin-top: 250px;
+}
+
+</style>
+</body>
+</html>

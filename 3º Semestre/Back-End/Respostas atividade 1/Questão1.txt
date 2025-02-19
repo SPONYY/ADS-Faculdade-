@@ -1,0 +1,3 @@
+﻿1 - Com base no conteúdo abordado em sala de aula, explique as principais funcionalidades de um servidor WEB. Salve a resposta em um documento texto: Questão1.txt 
+
+R: É um software web que fornece as informações para o usuário via navegador

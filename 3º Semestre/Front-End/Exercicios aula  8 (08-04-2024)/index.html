@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+
+table{
+
+    width: 300px;
+    height: 200px;
+    -webkit-box-shadow: 14px 16px 10px 1px rgba(111,111,111,0.38); 
+    box-shadow: 14px 16px 10px 1px rgba(111,111,111,0.38);
+    
+
+}
+table thead th{
+
+    background-color: rgb(189, 188, 188);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border: solid 1px rgb(0, 0, 0);
+
+}
+table tbody{
+
+    text-align: center;
+
+}
+
+table tr:nth-child(even){
+    background-color: rgb(185, 104, 104);
+    color: white;
+}
+table tr:hover{
+    background-color: rgb(146, 146, 146);
+}
+
+
+</style>
+<body>
+    
+    <table summary="Leitor de tela le isso aqui">
+        
+        <thead>
+            <tr>
+                <th colspan="2">Livros</th>
+            </tr>
+            <tr>
+                <th>Título</th>
+                <th>Nº Páginas</th>
+                <th></th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Os Fundamentos do capitalismo</td>
+                <td>128</td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <td>Teste:</td>
+            <td>Resultado:</td>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>

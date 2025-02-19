@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="vecteezy_cachorro_1200028.png" alt="logoHeader" width="100"></a>
+        </div>
+
+        <div id="tituloHeader">
+            <h1>Cadastro</h1>
+        </div>
+
+        <div id="botoesHeader">
+            <a href="index.html">Cancelar</a>
+        </div>
+
+    </header>
+
+    <main>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome completo:</label>
+                <input type="text" class="inputforms" id="nome" name="nome"><br><br>
+        
+                <label for="email">Endereço de e-mail:</label>
+                <input type="email" id="email" class="inputforms" name="email"><br><br>
+        
+                <label for="telefone">Número de telefone:</label>
+                <input type="tel" id="telefone" class="inputforms" name="telefone"><br><br>
+        
+                <label for="endereco">Endereço:</label>
+                <input class="inputforms" id="endereco" name="endereco"></input><br><br>
+        
+                <label for="usuario">Nome de usuário:</label>
+                <input class="inputforms" type="text" id="usuario" name="usuario"><br><br>
+        
+                <label for="senha">Senha:</label>
+                <input class="inputforms" type="password" id="senha" name="senha"><br><br>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Dados do Pet</legend>
+                <label for="nomePet">Nome:</label>
+                <input class="inputforms" type="text" id="nomePet" name="nomePet"><br><br>
+        
+                <label for="especie">Espécie:</label>
+                <input class="inputforms" type="text" id="especie" name="especie"><br><br>
+        
+                <label for="raca">Raça:</label>
+                <input class="inputforms" type="text" id="raca" name="raca"><br><br>
+        
+                <label for="sexo">Sexo:</label>
+                <select class="inputforms" id="sexo" name="sexo">
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                </select><br><br>
+        
+                <label for="idade">Idade:</label>
+                <input class="inputforms" type="number" id="idade" name="idade"><br><br>
+        
+                <label for="peso">Peso:</label>
+                <input class="inputforms" type="text" id="peso" name="peso"><br><br>
+        
+                <label for="cor">Cor:</label>
+                <input  class="inputforms" type="text" id="cor" name="cor"><br><br>
+        
+                <label for="alergias">Quaisquer alergias ou condições médicas:</label><br>
+                <textarea id="alergias" name="alergias"></textarea><br><br>
+            </fieldset>
+
+
+            <input class="botaoFormulario" type="reset" value="Limpar">
+            <input class="botaoFormulario" type="button" value="Enviar" onclick="submitForm();">
+        </form>
+        
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Contato e Endereço</h2>
+                <p>15997015647</p>
+                <p>Rua Uniso da silva saurro</p>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Siga-nos</h2>
+                <div class="social-links">
+                    <a href="#">Facebook</a> <br>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 Atividade Avaliativa 1
+        </div>
+    </footer>
+
+    
+
+    
+</body>
+</html>

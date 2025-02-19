@@ -1,0 +1,187 @@
+/* Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Alterações  essenciais antes de começar a criar */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #000020;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.logo {
+    order: 1; /* Muda a ordem do elemento */
+}
+
+.login-register {
+    order: 3; /* Muda a ordem do elemento */
+    font-size: 20px;
+    text-align: center;
+}
+
+.middle-button {
+    order: 2; /* Muda a ordem do elemento */
+    font-size: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #000020;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Remova esta linha */
+    margin-top: auto; /* Adicione esta linha */
+    bottom: 0; /* Adicione esta linha */
+    width: 100%;
+}
+
+
+.footer-logo {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+li{
+    margin: 8px;
+}
+
+.social-links {
+    text-align: center;
+}     
+
+
+/* Efeitos ao mover o mouse acima do Anchor */
+a:hover{
+    color: white;
+}
+
+a{
+    transition: 0.7s;
+}
+
+main{
+    margin-bottom: 80px;
+}
+/* Estilização do Formulário */
+.formulario{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização dos botões */
+.botoes{
+    display: flex;
+    flex-direction: row;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+}
+
+/* Estilização dos Inputs */
+input[type="text"]{
+height: 50px;    
+
+font-size: 25px;
+    border-radius: 8px;
+}
+
+
+
+input[type="password"]{
+    height: 50px;
+   
+    border-radius: 8px;
+    font-size: 25px;
+
+   
+}
+/* Estilização do cadastro */
+.cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulário */
+form{
+    font-size: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilização do Input: Botão */
+input[type="button"]{
+    height: 60px;
+    gap: 30px;
+}
+
+/* Estilização do botão de Entrar */
+#entrar{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #000020;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Estilização da sobreposição do mouse acima do botão */
+#entrar:hover{
+    background-color: white;
+    color: #000020;
+}
+
+
+/* Fonte do Registro */
+#registro{
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Estilização de Anchors do ID Registrar */
+a#registrar {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    background-color: white;
+    color: #000020;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    
+}
+
+
+/* Estilização do input entrar */
+input#entrar{
+    font-size: 25px;
+}
+
+/* Efeito de sobreposição */
+a#registrar:hover{
+    color: white;
+    background-color: #000020;
+}

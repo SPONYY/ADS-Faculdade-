@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Instituições</title>
+    <link rel="stylesheet" href="style/CadastroInstituicoes.css">
+</head>
+<body>
+
+    <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/Logo quadratica.svg" alt="" style="width: 100px; margin-left: 16px;">
+                </a>
+            </div>
+            <div class="middle-button">
+                <a href="CadastroInstituicoes.html">Cadastro de Instituições</a> <br>
+                <hr>
+            </div>
+            <div class="login-register ">
+                <a href="login.html">Login</a>
+                <hr>
+                <a href="registro.html">Registrar-se</a>
+            </div>
+    </header>
+
+    <main>
+
+        <form id="cadastroForm">
+            <fieldset>
+                <legend>Cadastro de Instituições</legend>
+
+                <div class="informacoesBasicasL1">
+                    <div class="camposCod">
+                        <label for="codInstituicao">Cód:</label> <br>
+                        <input type="number" id="codInstituicao">
+                    </div>
+                    <div class="camposRazaoSocial">
+                        <label for="razaoSocial">Razão Social:</label> <br>
+                        <input type="text" id="razaoSocial">
+                    </div>
+                </div>
+                <div class="informacoesBasicasL2">
+                    <div class="camposNomeContato">
+                        <label for="nomeContato">Nome Contato:</label> <br>
+                        <input type="text" id="nomeContato">
+                    </div>
+                    <div class="camposTelefone">
+                        <label for="telefone">Telefone:</label> <br>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div class="camposEmail">
+                        <label for="email">E-mail:</label> <br>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+
+                <div class="buscaCEP">
+                    <label for="inputCEP">CEP:</label> <br>
+                    <input type="text" id="inputCEP">
+                    <button type="button" onclick="printCEPData()">Buscar</button><br>
+                </div>
+    
+                <div class="cidadeEstadoSelect">
+                    <div class="camposEstado">
+                        <label for="estadoSelect">Selecione um estado:</label> <br>
+                        <select id="estadoSelect">
+                            <!-- Aqui serão adicionados os estados -->
+                        </select>
+                    </div>
+            
+                    <div class="camposCidade">
+                        <label for="cidadeSelect">Selecione uma cidade:</label> <br>
+                        <!-- Dropdown para selecionar uma cidade -->
+                        <select id="cidadeSelect">
+                            <option value="">Selecione um estado primeiro</option>
+                        </select> <br>
+                    </div>
+                </div>
+        
+                <div class="camposEndereco">
+                    <div class="camposLogradouro">
+                        <label for="logradouro">Logradouro:</label> <br>
+                        <input type="text" id="logradouro" >
+                    </div>
+
+                    <div class="camposBairro">
+                        <label for="bairro">Bairro:</label> <br>
+                        <input type="text" id="bairro" >
+                    </div>
+
+                    <div class="camposNum">
+                        <label for="numero-endereco">Nº:</label> <br>
+                        <input type="text" id="numero-endereco" >
+                    </div>
+                    <div class="camposDDD">
+                        <label for="ddd">DDD:</label> <br>
+                        <input type="text" id="ddd" >
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button type="reset">Cancelar</button>
+
+                    <!-- Botão para salvar o cadastro -->
+                    <button type="button" onclick="salvar()">Salvar</button>
+
+                    <!-- Botão para exportar os dados -->
+                    <button type="button" onclick="exportarJSON()">Exportar JSON</button>
+                </div>
+
+        
+            </fieldset>
+        </form>
+
+        <!-- Tabela para exibir os dados cadastrados -->
+        <table id="tabela-cadastros">
+            <thead>
+                <tr>
+                    <th>Cód</th>
+                    <th>Razão Social</th>
+                    <th>Nome Contato</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                    <th>Estado</th>
+                    <th>Cidade</th>
+                    <th>Endereço</th>
+                    <th>Bairro</th>
+                    <th>Nº</th>
+                    <th>DDD</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-da-tabela">
+                <!-- Aqui serão adicionadas as linhas da tabela -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Logo quadratica.svg" alt="Logo" class="footer-logo">
+            </a>
+        </div>
+        <div class="contact-info">
+            <ul>
+                <li>Rua João Afonso Pinto, 455</li>
+                <li>mendesCar@gmail.com</li>
+                <li>(15) 8888-88888</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><img src="img/627baa008d659819b11084f7.png" alt="whatsapp" style="width: 120px;"></a>
+            <a href="#" target="_blank"><img src="img/627ba7278d659819b11084f4.png" alt="Instagram" style="width: 200px;"></a>
+        </div>
+    </footer>
+    
+    <script src="script/buscaCEP.js"></script>
+    <script src="script/cidadeEstado.js"></script>
+    <script src="script/tabela.js"></script>
+    <script src="script/exportarJSON.js"></script>
+    
+</body>
+</html>

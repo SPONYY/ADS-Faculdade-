@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exercicio Lâmpada</title>
+    <link rel="stylesheet" href="/lampada.css">
+</head>
+<body>
+    <div id="cont-lampada">
+        <img src="/lamp-apagada.png" id="img-lampada">
+        <button id="interruptor">Acende ai</button>
+    </div>
+
+    <script>
+
+        
+var acesa = false;
+const lamp = document.getElementById('img-lampada');
+const interruptor = document.getElementById('interruptor');
+
+
+
+function AcenderApagar() {
+
+    if(acesa) {
+        lamp.setAttribute('src', '/lamp-apagada.png');
+        interruptor.innerText = "Acender";
+    }
+    else {
+        lamp.setAttribute('src', '/lamp-acesa.png');
+        interruptor.innerText = "Apagar";
+    }
+
+    acesa = !acesa;
+}
+
+
+
+interruptor.addEventListener('click', AcenderApagar);
+
+var inputTexto = document.getElementById('meuInputTexto');
+inputTexto.value = 'Novo valor de texto';
+
+var checkbox = document.getElementById('meuCheckbox');
+checkbox.checked = true;
+
+
+
+    </script>
+
+    <style>
+
+#cont-lampada {
+    display: flex;         
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column; 
+}
+
+button {
+    padding: 8px 12px;      
+    font-size: 16px;         
+    color: white;                
+    background-color: #000020; 
+    border: none;            
+    border-radius: 4px;      
+    cursor: pointer;         
+    min-width: 100px;
+}
+
+
+    </style>
+</body>
+</html>
+
+
